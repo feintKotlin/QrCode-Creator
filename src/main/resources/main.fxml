@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="mainRoot" alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20"
+      style="-fx-padding: 32px;" xmlns="http://javafx.com/javafx/8.0.121"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.feint.fx.controller.MainController">
+   <children>
+      <ImageView fx:id="qrImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXTextField fx:id="infoField" />
+      <JFXButton fx:id="creatorBtn" mnemonicParsing="false" onAction="#create" ripplerFill="#ae1414"
+                 style="-fx-background-color: #dd3131;" text="生成二维码图像" textFill="WHITE" />
+      <JFXButton fx:id="saveBtn" mnemonicParsing="false" onAction="#save" text="保存图像至本地" textFill="#2f7ff5" />
+   </children>
+</VBox>
